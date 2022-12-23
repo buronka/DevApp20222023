@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">projet dev app</string>
+
+    <!-- Page d'accueil -->
+    <string name="home_page_title">Jeu d\'image</string>
+    <string name="home_page_last_image">Dernières images</string>
+
+    <!-- Page de collection -->
+    <string name="collection_page_title">Ma collection</string>
+
+    <!-- Page d'ajout d'images -->
+    <string name="add_image_page_title">Ajout d\'image</string>
+    <string name="add_image_page_upload_button">Charger image</string>
+    <string name="add_image_page_name_input">@string/item_image_name</string>
+    <string name="add_image_page_description_input">@string/item_image_description</string>
+    
+    <string-array name="add_image_page_time">
+        <item>temps : heures</item>
+        <item>temps : minutes</item>
+        <item>temps : secondes</item>
+    </string-array>
+
+    <string name="add_image_page_confirm_button">Confirmer</string>
+
+    <!-- Fenêtre popup de détails -->
+    <string name="popup_image_name">Image Name</string>
+    <string name="popup_image_description_title">description</string>
+    <string name="popup_image_description_subtitle">Petite description</string>
+
+    <!-- images -->
+    <string name="item_image_name">Nom_de_l\'image</string>
+    <string name="item_image_description">Description_image</string>
+
+
+</resources>
