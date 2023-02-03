@@ -9,10 +9,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //injecter le fragment dans notre boite (fragment container)
-        val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.fragment_container, HomeFragment())
-        transaction.addToBackStack(null)
-        transaction.commit()
+        //charger ImageRepository
+        val repo = ImageRepository()
+
+        //maj liste images
+        repo.updateData {
+            //injecter le fragment dans notre boite (fragment container)
+            val transaction = supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.fragment_container, HomeFragment(this))
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+
+
     }
 }

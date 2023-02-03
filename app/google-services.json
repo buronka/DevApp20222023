@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "903286155862",
+    "project_id": "projetdevapp20222023",
+    "storage_bucket": "projetdevapp20222023.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903286155862:android:27b381290b12c08fc629f7",
+        "android_client_info": {
+          "package_name": "fr.buronka.projet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903286155862-qpp7so2uo4did5jv2ersi1c5bvcd25g8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-Y9GNYOm89-C0V48EDCPkP2oxMFgKT0k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903286155862-qpp7so2uo4did5jv2ersi1c5bvcd25g8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
