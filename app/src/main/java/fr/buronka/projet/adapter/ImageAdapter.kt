@@ -10,10 +10,12 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import fr.buronka.projet.ImageModel
+import fr.buronka.projet.ImageRepository
 import fr.buronka.projet.MainActivity
 import fr.buronka.projet.R
+import fr.buronka.projet.fragments.PhotoPopup
 
-class ImageAdapter(private val context: MainActivity,
+class ImageAdapter(val context: MainActivity,
                    private val imageList: List<ImageModel>,
                    private val layoutId: Int) : RecyclerView.Adapter<ImageAdapter.ViewHolder>(){
 
@@ -38,6 +40,9 @@ class ImageAdapter(private val context: MainActivity,
         //récup info de image
         val currentImage = imageList[position]
 
+        //recup repository
+        val repo = ImageRepository()
+
         //utiliser glide pour recup image à partir de son lien -> composant
         Glide.with(context).load(Uri.parse(currentImage.imageUrl)).into(holder.imageRecup)
 
@@ -53,6 +58,20 @@ class ImageAdapter(private val context: MainActivity,
         }
         else {
             holder.starIcon.setImageResource(R.drawable.hourglass)
+        }
+
+        //interaction sur icone
+        holder.starIcon.setOnClickListener {
+            //inverser les boutons
+            currentImage.resolved = !currentImage.resolved
+            //maj de l'objet
+            repo.updateImage(currentImage)
+        }
+
+        // iteraction quand on clique sur une image
+        holder.itemView.setOnClickListener {
+            //afficher la popup
+            PhotoPopup(this, currentImage).show()
         }
     }
 
