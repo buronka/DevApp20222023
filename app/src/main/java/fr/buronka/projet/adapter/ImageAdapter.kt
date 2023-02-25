@@ -49,10 +49,10 @@ class ImageAdapter(private val context: MainActivity,
 
         //verif si image fav ou non
         if(currentImage.resolved) {
-            holder.starIcon.setImageResource(R.drawable.ic_fav)
+            holder.starIcon.setImageResource(R.drawable.ckeck)
         }
         else {
-            holder.starIcon.setImageResource(R.drawable.ic_unfav)
+            holder.starIcon.setImageResource(R.drawable.hourglass)
         }
     }
 
