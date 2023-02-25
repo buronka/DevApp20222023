@@ -4,8 +4,7 @@ class ImageModel(
     val date : String = "Date prise photo",
     val heure : String = "Heure prise photo",
     val imageUrl: String = "http://buronka.com/imagefaceface.jpg",
-    val resolved : Boolean = false,
-    val id : String = "image id"
+    val resolved : Boolean = false
 )
 
 //class ImageModel(

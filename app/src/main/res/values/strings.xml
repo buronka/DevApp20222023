@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">projet dev app</string>
 
+    <!-- Bottom menu items -->
+    <string name="botthome_item">Home</string>
+    <string name="bottCollection_item">Collection</string>
+    <string name="bottLogin_item">Login</string>
+
     <!-- Page d'accueil -->
     <string name="home_page_title">Jeu d\'image</string>
     <string name="home_page_last_image">Dernières images</string>

@@ -30,6 +30,21 @@
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="100dp"/>
+        tools:layout_editor_absoluteX="0dp">
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation_view"
+        app.menu="@menu/bottnav_menu"
+        android:layout_width="414dp"
+        android:layout_height="98dp"
+        android:background="@color/darkred"
+        android:theme="@style/BottNav"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottnav_menu"
+        app:itemIconTint="@drawable/bottnav_color"
+        app:itemTextColor="@drawable/bottnav_color"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
