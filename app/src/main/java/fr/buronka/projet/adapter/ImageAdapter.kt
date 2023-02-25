@@ -42,13 +42,13 @@ class ImageAdapter(private val context: MainActivity,
         Glide.with(context).load(Uri.parse(currentImage.imageUrl)).into(holder.imageRecup)
 
         //maj nom image
-        holder.imageName?.text = currentImage.name
+        holder.imageName?.text = currentImage.date
 
         //maj description image
-        holder.imageDescription?.text = currentImage.description
+        holder.imageDescription?.text = currentImage.heure
 
         //verif si image fav ou non
-        if(currentImage.liked) {
+        if(currentImage.resolved) {
             holder.starIcon.setImageResource(R.drawable.ic_fav)
         }
         else {
