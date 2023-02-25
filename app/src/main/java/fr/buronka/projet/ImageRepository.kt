@@ -49,4 +49,9 @@ class ImageRepository {
 
     }
 
+    //mettre a jour dans bdd
+    fun updateImage(Image: ImageModel) {
+        databaseRef.child(Image.id).setValue(Image)
+    }
+
 }
