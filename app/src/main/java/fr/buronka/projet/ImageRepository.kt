@@ -8,7 +8,6 @@ import fr.buronka.projet.ImageRepository.Singleton.databaseRef
 import fr.buronka.projet.ImageRepository.Singleton.imageList
 
 class ImageRepository {
-
     object Singleton{
 
         //se connecter a la reference "images"
