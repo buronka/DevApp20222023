@@ -18,14 +18,15 @@
             android:background="@color/darkred"
             android:padding="@dimen/default_margin"
             android:textColor="@color/white"
-            style="@style/titleTextStyle" />
+            android:textSize="18dp"
+            style="@style/titleTextStyle"/>
 
         <ImageView
             android:id="@+id/preview_img"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:src="@drawable/run"
-            android:scaleType="centerCrop"/>
+            android:src="@mipmap/cctv"
+            android:scaleType="fitCenter"/>
 
     </LinearLayout>
 
@@ -53,7 +54,7 @@
         android:layout_height="100dp"
         android:background="@color/darkGray"
         android:text="@string/add_image_page_confirm_button"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:textColor="@color/white"/>
 
 </LinearLayout>
