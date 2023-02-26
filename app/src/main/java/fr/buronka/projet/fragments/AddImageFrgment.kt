@@ -18,6 +18,7 @@ import fr.buronka.projet.ImageRepository.Singleton.downloadUri
 import fr.buronka.projet.MainActivity
 import fr.buronka.projet.R
 import java.util.*
+import android.util.Log
 
 class AddImageFrgment (
     private val context:MainActivity
@@ -44,10 +45,14 @@ class AddImageFrgment (
 
     private fun sendForm(view: View) {
         val repo = ImageRepository()
+        Log.d("OwO", fileS.toString())
         repo.uploadImage(fileS!!) {
             val imgDate = view.findViewById<EditText>(R.id.date_input).text.toString()
             val imgHour = view.findViewById<EditText>(R.id.hour_input).text.toString()
             val downloadImageUrl = downloadUri
+
+            Log.d("Date", imgDate)
+            Log.d("OwO", "OwO")
 
             // Creer un nouvel objet
             val img = ImageModel(
@@ -73,8 +78,7 @@ class AddImageFrgment (
     var resultLauncher = registerForActivityResult(StartActivityForResult()) { result ->
         if(result.resultCode == Activity.RESULT_OK) {
             val data: Intent? = result.data
-            val fileS = data?.data
-
+            fileS = data?.data
             // Maj de l'image sur la page
             uploadedImage?.setImageURI(fileS)
         }
