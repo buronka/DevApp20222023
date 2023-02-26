@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import fr.buronka.projet.fragments.AddImageFrgment
 import fr.buronka.projet.fragments.CollectionFragment
 import fr.buronka.projet.fragments.HomeFragment
 
@@ -22,8 +23,8 @@ class MainActivity : AppCompatActivity() {
                     load_fragment(HomeFragment(this))
                     return@setOnItemSelectedListener true
                 }
-                R.id.home_page -> {
-                    load_fragment(HomeFragment(this))
+                R.id.add_page -> {
+                    load_fragment(AddImageFrgment(this))
                     return@setOnItemSelectedListener true
                 }
                 R.id.coll_page -> {

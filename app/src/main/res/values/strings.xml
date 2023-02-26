@@ -4,6 +4,7 @@
     <!-- Bottom menu items -->
     <string name="botthome_item">Accueil</string>
     <string name="bottCollection_item">Incidents</string>
+    <string name="bottadd_item">Ajout d\'item</string>
     <string name="bottLogin_item">Login</string>
 
     <!-- Page d'accueil -->

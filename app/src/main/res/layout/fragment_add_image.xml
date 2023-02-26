@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/default_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/upload_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_image_page_upload_button"
+            android:background="@color/darkred"
+            android:padding="@dimen/default_margin"
+            android:textColor="@color/white"
+            style="@style/titleTextStyle" />
+
+        <ImageView
+            android:id="@+id/preview_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/run"
+            android:scaleType="centerCrop"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/date_input"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="@string/add_image_page_name_input"
+        android:paddingLeft="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        style="@style/DefaultTextStyle"/>
+
+    <EditText
+        android:id="@+id/hour_input"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="@dimen/default_margin"
+        android:paddingLeft="@dimen/default_margin"
+        style="@style/DefaultTextStyle"
+        android:hint="@string/add_image_page_description_input"/>
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/darkGray"
+        android:text="@string/add_image_page_confirm_button"
+        android:textSize="30dp"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
