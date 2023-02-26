@@ -76,7 +76,7 @@ class ImageAdapter(val context: MainActivity,
     }
 
     //renvoie le nombre d'items afficher dynamiquement
-    override fun getItemCount(): Int = imageList.size
+    override fun getItemCount(): Int = 3
 
 
 }

@@ -19,7 +19,7 @@ class CollectionFragment (
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater?.inflate(R.layout.fragment_collection, container, false)
         val coll_view = view.findViewById<RecyclerView>(R.id.coll_recycler_list)
-        coll_view.adapter = ImageAdapter(context, imageList, R.layout.item_horizontal_image)
+        coll_view.adapter = ImageAdapter(context, imageList.filterNot {it.resolved}, R.layout.item_vertical_image)
         coll_view.layoutManager = LinearLayoutManager(context)
         return view
     }

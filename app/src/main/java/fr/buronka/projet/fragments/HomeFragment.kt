@@ -60,11 +60,10 @@ class HomeFragment(
             false
         ))
         */
-/*
         //récup recycler view
         val horizontalRecyclerView = view.findViewById<RecyclerView>(R.id.horizontal_recycler_view)
         horizontalRecyclerView.adapter = ImageAdapter(context, imageList, R.layout.item_horizontal_image)
-*/
+
         //recup du second recycler view
         val verticalRecyclerView = view.findViewById<RecyclerView>(R.id.vertical_recycler_view)
         verticalRecyclerView.adapter = ImageAdapter(context, imageList, R.layout.item_vertical_image)

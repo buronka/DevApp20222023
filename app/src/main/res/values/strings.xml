@@ -2,16 +2,16 @@
     <string name="app_name">projet dev app</string>
 
     <!-- Bottom menu items -->
-    <string name="botthome_item">Home</string>
-    <string name="bottCollection_item">Collection</string>
+    <string name="botthome_item">Accueil</string>
+    <string name="bottCollection_item">Incidents</string>
     <string name="bottLogin_item">Login</string>
 
     <!-- Page d'accueil -->
     <string name="home_page_title">Jeu d\'image</string>
-    <string name="home_page_last_image">Dernières images</string>
+    <string name="home_page_last_image">Derniers incidents : </string>
 
     <!-- Page de collection -->
-    <string name="collection_page_title">Ma collection</string>
+    <string name="collection_page_title">Liste des incidents</string>
 
     <!-- Page d'ajout d'images -->
     <string name="add_image_page_title">Ajout d\'image</string>
@@ -28,13 +28,13 @@
     <string name="add_image_page_confirm_button">Confirmer</string>
 
     <!-- Fenêtre popup de détails -->
-    <string name="popup_image_name">Image Name</string>
-    <string name="popup_image_description_title">description</string>
-    <string name="popup_image_description_subtitle">Petite description</string>
+    <string name="popup_image_name">Date</string>
+    <string name="popup_image_description_title">Heure</string>
+    <string name="popup_image_description_subtitle">Checkmark</string>
 
     <!-- images -->
-    <string name="item_image_name">Nom_de_l\'image</string>
-    <string name="item_image_description">Description_image</string>
+    <string name="item_image_name">Date</string>
+    <string name="item_image_description">Heure</string>
 
 
 </resources>
