@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">projet dev app</string>
+    <string name="app_name">SuperSecuritySystem</string>
 
     <!-- Bottom menu items -->
     <string name="botthome_item">Accueil</string>
