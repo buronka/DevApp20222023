@@ -4,6 +4,7 @@
     android:layout_width="350dp"
     android:layout_height="600dp"
     android:padding="@dimen/item_margin"
+    android:background="@drawable/rounded_edge"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
@@ -42,6 +43,7 @@
     <TextView
         android:id="@+id/popup_image_date"
         style="@style/titleTextStyle"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/popup_image_name"
@@ -72,6 +74,7 @@
     <TextView
         android:id="@+id/popup_image_heure"
         style="@style/titleTextStyle"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/popup_image_description_title"
@@ -81,8 +84,8 @@
 
     <ImageView
         android:id="@+id/star_button"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:src="@drawable/ic_unfav"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
